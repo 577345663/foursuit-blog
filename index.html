@@ -9,59 +9,111 @@
   <p>Milestones, beta notes, and development updates.</p>
   <p><a href="https://playfoursuit.com">Play Foursuit!</a></p>
   <p><a href="https://x.com/foursuit">x.com/foursuit</a></p>
+<section class="dev-entry">
+  <h2>Foursuit! Beta 0.1 — Milestone Notes</h2>
+  <p class="entry-date">Early May 2026</p>
 
-# Foursuit! Beta 0.1 — Development Notes
+  <ul class="milestone-list">
+    <li>
+      <strong>Initial concept formed.</strong>
+      Development began as a “War”-like standard-deck card game with fantasy elements. The early goal was simple: use a normal deck of cards as the engine for a browser game with more agency than pure card-flip randomness.
+    </li>
 
-**Date:** Early May 2026
-**Status:** Beta 0.1 live / first public test build
-**Site:** playfoursuit.com
-**Feedback:** x.com/foursuit
+    <li>
+      <strong>3×3 field became the core board.</strong>
+      Cards 2–10 became the main battlefield, arranged into a hidden 3×3 grid. The reveal-and-compare structure gave the game its basic rhythm: place, reveal, compare, score.
+    </li>
 
----
+    <li>
+      <strong>Scoring shifted toward surviving total value.</strong>
+      The game settled on scoring by survivor total difference instead of simply counting won squares. This became one of the most important design choices, because it made card value and placement matter more than raw square count.
+    </li>
 
-## Overview
+    <li>
+      <strong>Royal powers were defined.</strong>
+      Jack, Queen, King, and Ace became limited tactical powers rather than ordinary high cards. Their roles settled into: Jack claims a tie, Queen restores a fallen card, King cancels an opposing survivor, and Ace swaps adjacent opposing cards.
+    </li>
 
-Foursuit! began as a small standard-deck browser game concept: a simple card battle inspired by War, but with more agency, more structure, and a tactical scoring layer.
+    <li>
+      <strong>The Royal Parlay became the main tactical layer.</strong>
+      The royal phase was refined into a one-royal commitment system. Matching royals draw, higher royals win, the winning royal resolves, and the lower royal is blocked. This gave the game its main moment of post-reveal decision-making.
+    </li>
 
-The current beta includes two presentations of the same core game:
+    <li>
+      <strong>The Heir / Bloodline rule was locked in.</strong>
+      The final unused royal can never be spent. In Classic this became the Heir; in Fantasy it became the Bloodline. This added needed pressure to royal use.
+    </li>
 
-* **Foursuit!** — Classic card-table version
-* **Loresuit!** — Fantasy flavor version
+    <li>
+      <strong>Fantasy factions took shape.</strong>
+      The four suits became four fantasy factions: Lifeblood Order, Starshine Druids, Rockbreaker Clans, and Earthworker Tribes. This gave the game a second identity beyond the plain card-table version.
+    </li>
 
-Both versions use the same engine: hidden 3×3 card placement, reveal-based comparison, royal powers, score-difference rounds, and the Royal Parlay.
+    <li>
+      <strong>Classic mode was introduced, then became central.</strong>
+      Classic first appeared as a visual alternative to the fantasy presentation, but after testing and reflection it became the main default mode. The fantasy version remained as a parallel presentation rather than the only identity of the game.
+    </li>
 
----
+    <li>
+      <strong>The Foursuit! / Loresuit! split was chosen.</strong>
+      The base game became Foursuit!, with the tagline “Four suits. Two colors. One deck.” The fantasy-facing version became Loresuit!, with the tagline “Four factions. Two sides. One crown.”
+    </li>
 
-## Current Beta 0.1 Status
+    <li>
+      <strong>Game modes expanded.</strong>
+      The game grew from a single-match format into three main modes: Single / Battle, Trifecta / Campaign, and Colors / Allies. These modes reused the same core rules while changing the scope and pressure of play.
+    </li>
 
-Beta 0.1 includes:
+    <li>
+      <strong>Old themed skin ideas were removed.</strong>
+      Earlier visual skin experiments, including retro-style palette options and hidden unlock-style presentation choices, were cut from the beta path. The game moved toward a cleaner Foursuit / Loresuit identity instead.
+    </li>
 
-* Classic Foursuit!
-* Fantasy Loresuit!
-* three modes
-* three difficulties
-* Royal Parlay
-* Heir/Bloodline rule
-* tutorial
-* House Rules download
-* announcement modal
-* sound toggle
-* beta version badge
-* static website deployment
+    <li>
+      <strong>Computer royal logic was improved.</strong>
+      The Computer initially made royal choices that could feel arbitrary, such as using a powerful royal for a tiny gain. Difficulty settings and threshold-based royal evaluation were added so the Computer would use royals more intentionally.
+    </li>
 
-Current goal:
+    <li>
+      <strong>Difficulty options were added.</strong>
+      Easy, Medium, and Hard were added as a clean way to tune Computer royal judgment. The goal was not to create a perfect opponent, but to make the Computer feel fair, readable, and less random.
+    </li>
 
-> Gather feedback, watch where players hesitate, and fix only what blocks understanding or playability.
+    <li>
+      <strong>House Rules were added for real-card play.(*Work in progress)</strong>
+      The browser game remained the main rules engine, but a downloadable House Rules version was added for table play with a real deck. The tabletop version preserves the spirit of the game while adjusting Royal Parlay timing for two human players.
+    </li>
 
-## Next Likely Update
+    <li>
+      <strong>Sound was added through a custom soundboard workflow.</strong>
+      A native browser sound system was added using named sound codes from a custom soundboard tool. This made it easier to assign consistent sounds to menu actions, cards, modals, errors, locking, showing, and advancing.
+    </li>
 
-* deeper Lore modal rewrite
-* more polished tutorial visuals
-* minor UI alignment fixes
-* more table-play notes
-* new dev diary / milestones
+    <li>
+      <strong>Major UI flow fixes were made.</strong>
+      CLEAR was added so players could reset their field before reveal. Wrap was added so players could read the final report before moving to the end screen. Score boxes, stat boxes, and screen centering went through several layout passes.
+    </li>
 
-No major mechanic changes are planned for Beta 0.1 unless testing reveals a real problem.
+    <li>
+      <strong>A tutorial was added.</strong>
+      The Rules section gained a tutorial explaining the field, reveal, royal powers, Royal Parlay, scoring, and the Heir / Bloodline rule. The tutorial was added after testing showed that the rules existed, but the strategy needed clearer teaching.
+    </li>
 
+    <li>
+      <strong>Social and web presence were secured.</strong>
+      The domain playfoursuit.com was secured, the X account x.com/foursuit was secured, and the project was prepared for static hosting through GitHub Pages.
+    </li>
+
+    <li>
+      <strong>Dev blog added.</strong>
+      A static dev blog was planned at blog.playfoursuit.com as a place for milestone notes, development updates, and longer explanations that do not belong in the in-game splash screen.
+    </li>
+
+    <li>
+      <strong>Beta 0.1 reached public-test readiness.</strong>
+      By Beta 0.1, Foursuit! included Classic and Fantasy presentations, three modes, three difficulties, Royal Parlay, Heir/Bloodline, sound, tutorial, House Rules download, announcement modal, and a working static site path.
+    </li>
+  </ul>
+</section>
 </body>
 </html>
